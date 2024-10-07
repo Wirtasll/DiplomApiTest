@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class GetOrderTest {
 
+    final String BASE_URI = "https://stellarburgers.nomoreparties.site";
     private String email;
     private String password;
     private String name;
@@ -19,7 +20,7 @@ public class GetOrderTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
+        RestAssured.baseURI = BASE_URI;
         name = "Vanyas";
         email = "Wirtasll@yandex.ru";
         password = "qwertyqwerty";

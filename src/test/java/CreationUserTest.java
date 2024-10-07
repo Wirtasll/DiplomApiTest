@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class CreationUserTest {
+    final String BASE_URI = "https://stellarburgers.nomoreparties.site";
     private String name;
     private String email;
     private String password;
@@ -15,7 +16,7 @@ public class CreationUserTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI= "https://stellarburgers.nomoreparties.site";
+        RestAssured.baseURI = BASE_URI;
         user = new User(email, password, name);
         apiUser = new ApiUser();
         name = "Vanyas";

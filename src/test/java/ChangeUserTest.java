@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class ChangeUserTest {
 
+    final String BASE_URI = "https://stellarburgers.nomoreparties.site" ;
     private String name;
     private String email;
     private String password;
@@ -23,7 +24,7 @@ public class ChangeUserTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
+        RestAssured.baseURI = BASE_URI;
         name = "Vanyas";
         email = "Wirtasll@yandex.ru";
         password = "qwertyqwerty";
