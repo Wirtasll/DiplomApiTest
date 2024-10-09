@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class CreationOrderTest {
-    final String BASE_URI = "https://stellarburgers.nomoreparties.site";
+    final static String BASE_URI = "https://stellarburgers.nomoreparties.site";
     private String name;
     private String email;
     private String password;

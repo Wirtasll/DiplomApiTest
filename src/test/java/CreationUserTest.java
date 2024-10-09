@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class CreationUserTest {
-    final String BASE_URI = "https://stellarburgers.nomoreparties.site";
+    final static String BASE_URI = "https://stellarburgers.nomoreparties.site";
     private String name;
     private String email;
     private String password;

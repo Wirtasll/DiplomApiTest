@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class GetOrderTest {
 
-    final String BASE_URI = "https://stellarburgers.nomoreparties.site";
+    final static String BASE_URI = "https://stellarburgers.nomoreparties.site";
     private String email;
     private String password;
     private String name;
