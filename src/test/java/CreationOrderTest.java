@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class CreationOrderTest {
-    final static String BASE_URI = "https://stellarburgers.nomoreparties.site";
+
     private String name;
     private String email;
     private String password;
@@ -24,7 +24,7 @@ public class CreationOrderTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = BASE_URI;
+        RestAssured.baseURI = ChangeUserTest.BASE_URI;
         name = "Vanyas";
         email = "Wirtasll@yandex.ru";
         password = "qwertyqwerty";

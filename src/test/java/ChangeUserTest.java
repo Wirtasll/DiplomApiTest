@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class ChangeUserTest {
 
-    final static String BASE_URI = "https://stellarburgers.nomoreparties.site" ;
+    public final static String BASE_URI = "https://stellarburgers.nomoreparties.site" ;
     private String name;
     private String email;
     private String password;

@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class LoginUserTest {
-    final static String BASE_URI = "https://stellarburgers.nomoreparties.site";
+
     private String name;
     private String email;
     private String password;
@@ -16,7 +16,7 @@ public class LoginUserTest {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = BASE_URI;
+        RestAssured.baseURI = ChangeUserTest.BASE_URI;
         user = new User(email, password, name);
         apiUser = new ApiUser();
         name = "Vanyas";
